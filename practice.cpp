@@ -19,3 +19,4 @@ int main(){
 }
 
 yurr motherfkin nigger
+puta putinder nigger
