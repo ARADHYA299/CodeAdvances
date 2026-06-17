@@ -1,0 +1,10 @@
+module.exports = function (requiredRole) {
+  return function (req, res, next) {
+    if (!req.user || req.user.roles != requiredRole) {
+      return res
+        .status(403)
+        .json({ error: "Forbidden: Insufficient permissions" });
+    }
+    next();
+  };
+};
